@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Curriculum Vitae</h1>
+    </header>
+    <div class="container">
+        <h2>Datos Personales</h2>
+        <p>Nombre: Frander Oveldo Carreto Gómez</p>
+        <p>Fecha de Nacimiento: 19 de Diciembre de 1998</p>
+        <p>Lugar de Nacimiento: Tumbador San Marcos</p>
+        <p></p>
+        
+        <h2>Datos de Contacto</h2>
+        <p>Email: frander56@gmail.com</p>
+        <p>Teléfono: (502) 5723-8423</p>
+        <p>Dirección: Ciudad de Guatemala</p>
+        <p>Carné: 201901371</p>
+        
+        <h2>Nivel de Estudios</h2>
+        <table>
+            <tr>
+                <th>Grado</th>
+                <th>Institución</th>
+                <th>Año de Finalización</th>
+            </tr>
+            <tr>
+                <td>Bachillerato</td>
+                <td>IDCVH</td>
+                <td>2017</td>
+            </tr>
+            <tr>
+                <td>Universidad</td>
+                <td>USAC</td>
+                <td>2023-En curso</td>
+            </tr>
+            
+        </table>
+        
+        <h2>Habilidades</h2>
+        <table>
+            <tr>
+                <th>Habilidad</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Programación</td>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <td>Soporte Técnico</td>
+                <td>Intermedio</td>
+            </tr>
+
+            <tr>
+                <td>Ingles</td>
+                <td>Básico</td>
+            </tr>
+            
+        </table>
+        
+        <div class="foto">
+            <h2>Foto Profesional</h2>
+            <img src="{{ url_for('static', filename='Fran.jpeg') }}" alt="Foto de cédula" class="cedula">
+        </div>
+        
+        <div class="intereses">
+            <h2>Intereses y Hobbies</h2>
+            <ul>
+                <li>Programación</li>
+                <li>Lectura</li>
+                <li>Tecnología</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
